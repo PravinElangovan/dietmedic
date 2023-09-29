@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:transparent;
+    color: white;
+    padding: 0.3rem;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    
+     
+}
+.logo{
+    width: 60px;
+    height: 80px;
+    margin-top: 10px;
+   
+    
+}
+.left-nav div{
+    display: flex;
+    gap: 3rem;
+   
+}
+.left-nav .nav-menu ul{
+    align-items: center;
+    display:flex;
+    gap: 3rem;
+}
+.left-nav .nav-menu ul li{
+    list-style: none;
+}
+.left-nav .nav-menu ul li a{
+    text-decoration: none;
+    color:white;
+}
+.right-nav{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.right-nav #invest-btn{
+    width: 10rem;
+    height: 2rem;
+    border-radius: 1rem;
+    background-color: white;
+    
+}
+.right-nav #invest-btn:hover{
+    background-color: #B89535;
+    color: white;
+    border: none;
+    transition: ease-in-out 1ms;
+}
+/* .drop-down{
+   
+  
+}
+.drop-down .drop-down-menu{
+    
+    display: flex;
+    flex-direction: column;
+    
+    position: absolute;
+    top: 100px;
+    left:0;
+    display:none;
+    background-color:#1D1F22;
+    width: 100vw;
+    
+    
+    
+}
+.drop-down .drop-down-menu li{
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.drop-down .drop-down-menu li:hover{
+   
+    color: white;
+    cursor: pointer;
+}
+
+.drop-down:hover .drop-down-menu{
+    display: block;
+    z-index: 99;
+}
+#dropdown-btn{
+    cursor: pointer;
+} */
+
+.drop-down .dropdown-content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 100px;
+    left: 0;
+    width: 100vw;
+    height: 25vw;
+    background-color:#1D1F22;
+    display: none;
+    padding-top: 2rem;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.column a{
+    color: white;
+    text-decoration: none;
+}
+.drop-down:hover .dropdown-content{
+    display: block;
+    z-index: 99;
+}
+#drop-down-btn{
+    cursor: pointer;
+    gap:10px;
+    display: flex;
+    align-items: center;
+}
+.hero-container {
+    position: relative;
+   
+}
+
+.hero-container .slider-container {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.hero-container .slider {
+    min-width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.hero-container .slider video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+/* Your existing CSS code */
+
+.hero-container::before {
+    content: ""; /* Add content to make the pseudo-element visible */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity as needed */
+    z-index: 1; /* Place the overlay on top of the content */
+}
+
+.hero-container .slider-container .active {
+    display: none;
+}
+.hero-container #next,
+.hero-container #prev
+{
+    position: absolute;
+    top:50%;
+    z-index:100;
+    transform: translateY(-50%);
+    background: white;
+    color: white;
+    font-weight: bold;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color:transparent;
+    border: 1px solid white;
+    
+}
+.hero-container #next:hover,
+.hero-container #prev:hover{
+    background-color:#B89535;
+    color: white;
+}
+.hero-container #next{
+    right: 2%;
+
+}
+.hero-container #prev{
+    left: 2%;
+}
+.hero-container h1{
+    position: absolute;
+    bottom: 30%;
+    left: 5%;
+    color: white;
+    z-index: 99;
+    font-size: 3rem;
+}
+#know-more{
+    background-color:white;
+    padding: 1rem 2rem;
+    position: absolute;
+    bottom: 18%;
+    left: 5%;
+    border-radius: 1rem;
+    border: none;
+    z-index: 99;
+
+}
+
+.background-video{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.second-container{
+    width: 100vw;
+    height: 100vh;
+    position: relative;;
+}
+.second-container::before {
+    content: ""; /* Add content to make the pseudo-element visible */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity as needed */
+    z-index: 1; /* Place the overlay on top of the content */
+}
+
+
+

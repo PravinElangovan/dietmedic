@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+    <title>DIET MEDIC</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-container">
+            <div class="left-nav">
+                <div>
+                    <img src="./images/logo1.png" alt="logo" class="logo">
+                    <div class="nav-menu">
+                        <ul>
+                            <li>
+                                <a href="#">About</a> 
+                            </li>
+                            <li>
+                               <a href="#">Regions</a> 
+                            </li>
+                            <div class="drop-down">
+                                <div id="drop-down-btn">Blogs<i class="fa fa-caret-down"></i>
+                                </div>
+                                <div class="dropdown-content">
+                                    <div class="row">
+                                        <div class="column">
+                                          <h3>Category 1</h3>
+                                          <a href="#">Link 1</a>
+                                          <a href="#">Link 2</a>
+                                          <a href="#">Link 3</a>
+                                        </div>
+                                        <div class="column">
+                                          <h3>Category 2</h3>
+                                          <a href="#">Link 1</a>
+                                          <a href="#">Link 2</a>
+                                          <a href="#">Link 3</a>
+                                        </div>
+                                        <div class="column">
+                                          <h3>Category 3</h3>
+                                          <a href="#">Link 1</a>
+                                          <a href="#">Link 2</a>
+                                          <a href="#">Link 3</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li >
+                                
+                                <a href="#">News</a>
+                            </li>
+                            <li>
+                                <a href="#">Invest In Neom</a>
+                            </li>
+                            <li>
+                                <a href="#">Careers</a>
+                            </li>
+                             <!-- <div class="drop-down">
+                                <div id="dropdown-btn">Drop Down Button</div>
+                                <div class="drop-down-menu" id="drop-down-content">
+                                    <li>Dropdown 1</li>
+                                    <li>Dropdown 2</li>
+                                    <li>Dropdown 3</li>
+                                </div>
+                            </div> -->
+                        </ul>
+
+                </div>  
+                </div>
+                <div>
+                    
+                </div>
+            </div>
+            <div class="right-nav">
+                <div class="lang">English</div>
+                <button id="invest-btn">Know More</button>
+            </div>
+        </div>
+        <div class="hero-container">
+            <div class="slider-container active">
+                <div class="slider">
+                    <video src="./images/video1.mp4" muted autoplay loop></video>
+                </div>
+                <div class="slider">
+                    <video src="./images/video.mp4" muted autoplay loop></video>
+                </div>
+                <div class="slider">
+                    <video src="./images/video3.mp4" muted autoplay loop></video>
+                </div>
+                
+            </div>
+            <button id="next" onclick="next()">&#8594;</button>
+            <button id="prev" onclick="prev()">&#8592;</button>
+
+
+            <h1>What is <span style = "color:#B89535"> DIET MEDIC ?</span> </h1>
+            <button id="know-more">Know More</button>
+        </div>
+
+        <div class="second-container">
+            <div class="background-video">
+                 <video src="./images/video5.mp4" muted autoplay loop></video> 
+            </div>
+
+
+
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
